@@ -11,3 +11,12 @@ document.querySelector(".img1").setAttribute("src", diceName1);
 document.querySelector(".img2").setAttribute("src", diceName2);
 
 // change title to reflect winner (or draw)
+if (diceNum1 > diceNum2) {
+  document.querySelector("h1").innerHTML = "🚩 Player 1 Wins!";
+}
+else if (diceNum1 < diceNum2) {
+  document.querySelector("h1").innerHTML = "Player 2 Wins! 🚩";
+}
+else {
+  document.querySelector("h1").innerHTML = "🚩 Draw 🚩";
+}
